@@ -1,0 +1,26 @@
+header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 80px;
+   background-color: $color-border;
+   width: 100vw;
+   margin: 0 auto;
+   clear: both;
+
+   #drawer-toggle{
+         visibility: hidden;
+      }
+
+   ul {
+      position: relative;
+      float: right;
+      top:15px;
+      right:20px;
+      bottom: 5px;
+
+      a {
+         color: $color-nav-links;
+      }
+   }
+}
