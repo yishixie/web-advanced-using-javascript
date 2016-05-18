@@ -1,0 +1,97 @@
+#burger-body{
+    margin:0;
+    overflow: hidden;
+
+
+#fullpage{
+    width:100vw;
+    height: 100vh;
+    background-color:#d9923f;
+}
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+.drag.over {
+  border: 2px dashed #000;
+}
+
+/*lettuce*/     
+#burger-body-shape2{
+    position:absolute;
+    width:100%;
+    height:10vh;
+    top:25vh;
+    background:#3ba31b;
+}   
+/*tomato*/
+#burger-body-shape3{
+    position:absolute;
+    width:100%;
+    height:14vh;
+    top:33vh;
+    background:#f54528;
+}   
+
+/*cheese*/  
+#burger-body-shape4{
+    position:absolute;
+    width:100%;
+    height:10vh;
+    top:46vh;
+    background:#ffcb00;
+}   
+
+/*meat*/    
+#burger-body-shape5{
+    position:absolute;
+    width:100%;
+    height:21vh;
+    top:54vh;
+    background-color:#5f3315;
+}   
+
+@media all and (max-height: 800px){
+    /*lettuce*/     
+#burger-body-shape2{
+    position:absolute;
+    width:100%;
+    height:80px;
+    top:200px;
+    background-color:#3ba31b;
+}   
+/*tomato*/
+#burger-body-shape3{
+    position:absolute;
+    width:100%;
+    height:112px;
+    top:264px;
+    background-color:#f54528;
+}   
+
+/*cheese*/  
+#burger-body-shape4{
+    position:absolute;
+    width:100%;
+    height:80px;
+    top:368px;
+    background-color:#ffcb00;
+}   
+
+/*meat*/    
+#burger-body-shape5{
+    position:absolute;
+    width:100%;
+    height:168px;
+    top:432px;
+    background-color:#5f3315;
+}   
+}
+}

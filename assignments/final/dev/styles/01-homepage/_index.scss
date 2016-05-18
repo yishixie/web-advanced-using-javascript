@@ -1,0 +1,303 @@
+body{
+    margin:0;
+    .clear{clear:both;
+    }
+
+
+    @mixin transition($property: all, $duration: 1s,
+     $timing_function: ease-out, $delay: 0s) {
+      -webkit-transition: $property $duration $timing_function $delay;
+      -moz-transition: $property $duration $timing_function $delay;
+      -o-transition: $property $duration $timing_function $delay;
+      transition: $property $duration $timing_function $delay;
+  }
+
+
+  #square1{
+    width: 15vw;
+    height:15vw;
+    position:absolute;
+    top:4vw;
+    left:8vw;
+    background-color: #690447;
+    display: inline-block;
+    transform: rotate(45deg);
+ -ms-transform: rotate(45deg); /* IE 9 */
+ -webkit-transform: rotate(45deg); /* Safari and Chrome */
+}
+
+
+#square1:hover{
+    width: 17vw;
+    height:17vw;
+    top:4vw;
+    left:7vw;
+    @include transition(all, 100ms, ease-in-out, 200ms);
+}
+
+#square2{
+    width: 15vw;
+    height:15vw;
+    position:absolute ;
+    top:25vw;
+    left:58vw;
+    background-color: #5f3315;
+    display: inline-block;
+    transform: rotate(175deg);
+ -ms-transform: rotate(175deg); /* IE 9 */
+ -webkit-transform: rotate(175deg); /* Safari and Chrome */
+}
+
+#square2:hover{
+    width: 17vw;
+    height:17vw;
+    top:24vw;
+    left:57vw;
+    @include transition(all, 100ms, ease-in-out, 200ms);
+}
+
+#square3{
+    width: 15vw;
+    height:15vw;
+    position:absolute;
+    top:38vw;
+    left:4vw;
+    background-color: #d37b2e;
+    display: inline-block;
+    transform: rotate(15deg);
+ -ms-transform: rotate(15deg); /* IE 9 */
+ -webkit-transform: rotate(15deg); /* Safari and Chrome */
+}
+
+#square3:hover{
+    width: 17vw;
+    height:17vw;
+    top:37vw;
+    left:6vw;
+    @include transition(all, 100ms, ease-in-out, 200ms);
+}
+
+#circle1{
+    border-radius: 50%;
+    width: 16vw;
+    height:16vw;
+    position:absolute;
+    top:40vw;
+    left:82vw;
+    background-color: #f01717;
+    display: inline-block;
+}
+
+#circle1:hover{
+    width: 18vw;
+    height:18vw;
+    top:40vw;
+    left:78vw;
+    @include transition(all, 100ms, ease-in-out, 200ms);
+}
+
+#circle2{
+    border-radius: 50%;
+    width: 16vw;
+    height:16vw;
+    position:absolute;
+    top:17vw;
+    left:31vw;
+    background-color: #fdcc36;
+    display: inline-block;
+}
+
+#circle2:hover{
+    width: 18vw;
+    height:18vw;
+    top:16vw;
+    left:30vw;
+    @include transition(all, 100ms, ease-in-out, 200ms);
+}
+
+#triangle1{
+    position:absolute;
+    top:2vw;
+    left:72vw;
+    width: 0vw; 
+    height: 0vw; 
+    border-top: 9vw solid transparent;
+    border-bottom: 9vw solid transparent; 
+    border-right:15vw solid #7a9515; 
+    background-color: transparent;
+}
+
+#triangle1:hover{
+    top:1vw;
+    left:70vw;
+    border-top: 11vw solid transparent;
+    border-bottom: 11vw solid transparent; 
+    border-right:17vw solid #7a9515; 
+    @include transition(all, 100ms, ease-in-out, 200ms);
+}
+
+#triangle2{
+    position:absolute;
+    top:48vw;
+    left:32vw;
+    width: 0vw; 
+    height: 0vw; 
+    border-left: 9vw solid transparent;
+    border-right: 9vw solid transparent; 
+    border-top:15vw solid #ed008c; 
+    background-color: transparent;
+}
+
+#triangle2:hover{
+    top:45vw;
+    left:30vw;
+    border-left: 11vw solid transparent;
+    border-right: 11vw solid transparent; 
+    border-top:17vw solid #ed008c; 
+    @include transition(all, 100ms, ease-in-out, 200ms);
+}
+
+
+@media all and (max-width:  800px){
+   #square1{
+    width: 120px;
+    height:120px;
+    position:absolute;
+    top:32px;
+    left:64px;
+    background-color: #690447;
+    display: inline-block;
+    transform: rotate(45deg);
+ -ms-transform: rotate(45deg); /* IE 9 */
+ -webkit-transform: rotate(45deg); /* Safari and Chrome */
+}
+
+
+#square1:hover{
+    width: 136px;
+    height:136px;
+    top:32px;
+    left:56px;
+    @include transition(all, 100ms, ease-in-out, 200ms);
+}
+
+#square2{
+    width: 120px;
+    height:120px;
+    position:absolute ;
+    top:200px;
+    left:464px;
+    background-color: #5f3315;
+    display: inline-block;
+    transform: rotate(175deg);
+ -ms-transform: rotate(175deg); /* IE 9 */
+ -webkit-transform: rotate(175deg); /* Safari and Chrome */
+}
+
+#square2:hover{
+    width: 136px;
+    height:136px;
+    top:192px;
+    left:456px;
+    @include transition(all, 100ms, ease-in-out, 200ms);
+}
+
+#square3{
+    width: 120px;
+    height:120px;
+    position:absolute;
+    top:304px;
+    left:32px;
+    background-color: #d37b2e;
+    display: inline-block;
+    transform: rotate(15deg);
+ -ms-transform: rotate(15deg); /* IE 9 */
+ -webkit-transform: rotate(15deg); /* Safari and Chrome */
+}
+
+#square3:hover{
+    width: 136px;
+    height:136px;
+    top:296px;
+    left:48px;
+    @include transition(all, 100ms, ease-in-out, 200ms);
+}
+
+#circle1{
+    border-radius: 50%;
+    width: 128px;
+    height:128px;
+    position:absolute;
+    top:320px;
+    left:656px;
+    background-color: #f01717;
+    display: inline-block;
+}
+
+#circle1:hover{
+    width: 144px;
+    height:144px;
+    top:320px;
+    left:624px;
+    @include transition(all, 100ms, ease-in-out, 200ms);
+}
+
+#circle2{
+    border-radius: 50%;
+    width: 128px;
+    height:128px;
+    position:absolute;
+    top:136px;
+    left:248px;
+    background-color: #fdcc36;
+    display: inline-block;
+}
+
+#circle2:hover{
+    width: 144px;
+    height:144px;
+    top:128px;
+    left:240px;
+    @include transition(all, 100ms, ease-in-out, 200ms);
+}
+
+#triangle1{
+    position:absolute;
+    top:16px;
+    left:576px;
+    border-top: 72px solid transparent;
+    border-bottom: 72px solid transparent; 
+    border-right:120px solid #7a9515; 
+    background-color: transparent;
+}
+
+#triangle1:hover{
+    top:8px;
+    left:560px;
+    border-top: 88px solid transparent;
+    border-bottom: 88px solid transparent; 
+    border-right:136px solid #7a9515; 
+    @include transition(all, 100ms, ease-in-out, 200ms);
+}
+
+#triangle2{
+    position:absolute;
+    top:384px;
+    left:256px;
+    border-left: 72px solid transparent;
+    border-right: 72px solid transparent; 
+    border-top:120px solid #ed008c; 
+    background-color: transparent;
+}
+
+#triangle2:hover{
+    top:360px;
+    left:240px;
+    border-left: 72px solid transparent;
+    border-right: 72px solid transparent; 
+    border-top:136px solid #ed008c; 
+    @include transition(all, 100ms, ease-in-out, 200ms);
+}
+}
+
+}

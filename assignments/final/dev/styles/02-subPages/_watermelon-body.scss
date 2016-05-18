@@ -1,0 +1,280 @@
+#watermelon-body{
+    margin:0;
+    overflow: hidden;
+
+    #fullpage{
+        position:fixed;
+        width:100vw;
+        height: 100vh;
+        background-color:#f01717;
+        z-index: -100;
+    }   
+
+    #watermelon-body-shape1 {
+        position:fixed;
+        top:10vw;
+        left:11vw;
+        width: 4vw;
+        height: 6vw;
+        background: #401409;
+        -moz-border-radius: 4vw / 6vw;
+        -webkit-border-radius: 4vw / 6vw;
+        border-radius: 4vw / 6vw;
+    }
+
+    #watermelon-body-shape2 {
+        position:fixed;
+        top:10vw;
+        left:36vw;
+        width: 4vw;
+        height: 6vw;
+        background: #401409;
+        -moz-border-radius: 4vw / 6vw;
+        -webkit-border-radius: 4vw / 6vw;
+        border-radius: 4vw / 6vw;
+    }
+    #watermelon-body-shape3 {
+        position:fixed;
+        top:10vw;
+        left:61vw;
+        width: 4vw;
+        height: 6vw;
+        background: #401409;
+        -moz-border-radius: 4vw / 6vw;
+        -webkit-border-radius: 4vw / 6vw;
+        border-radius: 4vw / 6vw;
+    }
+
+    #watermelon-body-shape4 {
+        position:fixed;
+        top:10vw;
+        left:85vw;
+        width: 4vw;
+        height: 6vw;
+        background: #401409;
+        -moz-border-radius: 4vw / 6vw;
+        -webkit-border-radius: 4vw / 6vw;
+        border-radius: 4vw / 6vw;
+    }
+
+//line2
+#watermelon-body-shape5 {
+    position:fixed;
+    top:30vw;
+    left:24vw;
+    width: 4vw;
+    height: 6vw;
+    background: #401409;
+    -moz-border-radius: 4vw / 6vw;
+    -webkit-border-radius: 4vw / 6vw;
+    border-radius: 4vw / 6vw;
+}
+
+#watermelon-body-shape6 {
+    position:fixed;
+    top:30vw;
+    left:49vw;
+    width: 4vw;
+    height: 6vw;
+    background: #401409;
+    -moz-border-radius: 4vw / 6vw;
+    -webkit-border-radius: 4vw / 6vw;
+    border-radius: 4vw / 6vw;
+}
+
+#watermelon-body-shape7 {
+    position:fixed;
+    top:30vw;
+    left:74vw;
+    width: 4vw;
+    height: 6vw;
+    background: #401409;
+    -moz-border-radius: 4vw / 6vw;
+    -webkit-border-radius: 4vw / 6vw;
+    border-radius: 4vw / 6vw;
+}
+
+//line3
+
+#watermelon-body-shape8 {
+    position:fixed;
+    top:50vw;
+    left:11vw;
+    width: 4vw;
+    height: 6vw;
+    background: #401409;
+    -moz-border-radius: 4vw / 6vw;
+    -webkit-border-radius: 4vw / 6vw;
+    border-radius: 4vw / 6vw;
+}
+
+#watermelon-body-shape9 {
+    position:fixed;
+    top:50vw;
+    left:36vw;
+    width: 4vw;
+    height: 6vw;
+    background: #401409;
+    -moz-border-radius: 4vw / 6vw;
+    -webkit-border-radius: 4vw / 6vw;
+    border-radius: 4vw / 6vw;
+}
+#watermelon-body-shape10 {
+    position:fixed;
+    top:50vw;
+    left:61vw;
+    width: 4vw;
+    height: 6vw;
+    background: #401409;
+    -moz-border-radius: 4vw / 6vw;
+    -webkit-border-radius: 4vw / 6vw;
+    border-radius: 4vw / 6vw;
+}
+
+#watermelon-body-shape11 {
+    position:fixed;
+    top:50vw;
+    left:85vw;
+    width: 4vw;
+    height: 6vw;
+    background: #401409;
+    -moz-border-radius: 4vw / 6vw;
+    -webkit-border-radius: 4vw / 6vw;
+    border-radius: 4vw / 6vw;
+}
+
+// @media all and (max-height: 800px){
+//     #watermelon-body-shape1 {
+//         position:fixed;
+//         top:80px;
+//         left:88px;
+//         width: 32px;
+//         height: 48px;
+//         background: #401409;
+//         -moz-border-radius: 32px / 48px;
+//         -webkit-border-radius: 32px / 48px;
+//         border-radius: 32px / 48px;
+//     }
+
+//     #watermelon-body-shape2 {
+//         position:fixed;
+//         top:80px;
+//         left:288px;
+//         width: 32px;
+//         height: 48px;
+//         background: #401409;
+//         -moz-border-radius: 32px / 48px;
+//         -webkit-border-radius: 32px / 48px;
+//         border-radius: 32px / 48px;
+//     }
+//     #watermelon-body-shape3 {
+//         position:fixed;
+//         top:80px;
+//         left:488px;
+//         width: 32px;
+//         height: 48px;
+//         background: #401409;
+//         -moz-border-radius: 32px / 48px;
+//         -webkit-border-radius: 32px / 48px;
+//         border-radius: 32px / 48px;
+//     }
+
+//     #watermelon-body-shape4 {
+//         position:fixed;
+//         top:80px;
+//         left:680px;
+//         width: 32px;
+//         height: 48px;
+//         background: #401409;
+//         -moz-border-radius: 32px / 48px;
+//         -webkit-border-radius: 32px / 48px;
+//         border-radius: 32px / 48px;
+//     }
+
+// //line2
+// #watermelon-body-shape5 {
+//     position:fixed;
+//     top:240px;
+//     left:192px;
+//     width: 32px;
+//     height: 48px;
+//     background: #401409;
+//     -moz-border-radius: 32px / 48px;
+//     -webkit-border-radius: 32px / 48px;
+//     border-radius: 32px / 48px;
+// }
+
+// #watermelon-body-shape6 {
+//     position:fixed;
+//     top:240px;
+//     left:392px;
+//     width: 32px;
+//     height: 48px;
+//     background: #401409;
+//     -moz-border-radius: 32px / 48px;
+//     -webkit-border-radius: 32px / 48px;
+//     border-radius: 32px / 48px;
+// }
+
+// #watermelon-body-shape7 {
+//     position:fixed;
+//     top:240px;
+//     left:592px;
+//     width: 32px;
+//     height: 48px;
+//     background: #401409;
+//     -moz-border-radius: 32px / 48px;
+//     -webkit-border-radius: 32px / 48px;
+//     border-radius: 32px / 48px;
+// }
+
+// //line3
+
+// #watermelon-body-shape8 {
+//     position:fixed;
+//     top:400px;
+//     left:88px;
+//     width: 32px;
+//     height: 48px;
+//     background: #401409;
+//     -moz-border-radius: 32px / 48px;
+//     -webkit-border-radius: 32px / 48px;
+//     border-radius: 32px / 48px;
+// }
+
+// #watermelon-body-shape9 {
+//     position:fixed;
+//     top:400px;
+//     left:288px;
+//     width: 32px;
+//     height: 48px;
+//     background: #401409;
+//     -moz-border-radius: 32px / 48px;
+//     -webkit-border-radius: 32px / 48px;
+//     border-radius: 32px / 48px;
+// }
+// #watermelon-body-shape10 {
+//     position:fixed;
+//     top:400px;
+//     left:488px;
+//     width: 32px;
+//     height: 48px;
+//     background: #401409;
+//     -moz-border-radius: 32px / 48px;
+//     -webkit-border-radius: 32px /48px;
+//     border-radius: 32px / 48px;
+// }
+
+// #watermelon-body-shape11 {
+//     position:fixed;
+//     top:400px;
+//     left:680px;
+//     width: 32px;
+//     height: 48px;
+//     background: #401409;
+//     -moz-border-radius: 32px / 48px;
+//     -webkit-border-radius: 32px / 48px;
+//     border-radius: 32px / 48px;
+// }
+// }
+}

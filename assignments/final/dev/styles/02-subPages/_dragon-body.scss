@@ -1,0 +1,425 @@
+#dragon-body{
+    margin:0;
+    overflow: hidden;
+
+
+    #fullpage{
+        position:fixed;
+        width:100vw;
+        height: 100vh;
+        background-color:#ed008c;
+        z-index: -100;
+    }
+    @mixin transition($property: all, $duration: 1s,
+     $timing_function: ease-out, $delay: 0s) {
+      -webkit-transition: $property $duration $timing_function $delay;
+      -moz-transition: $property $duration $timing_function $delay;
+      -o-transition: $property $duration $timing_function $delay;
+      transition: $property $duration $timing_function $delay;
+  }
+
+  #shapea{
+    position:fixed;
+    top:15vw;
+    left:5vw;
+    width: 12vw; 
+    height: 12vw; 
+    transform: rotate(-45deg);
+    background:rgb(176,211,49);
+    &:hover{
+        transform: rotate(45deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }
+    &:hover + #shape0 {
+        transform-origin: left top;
+        transform: rotate(270deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }
+}
+
+
+#shape0{
+    position:fixed;
+    top:21vw;
+    left:2vw;
+    width: 18vw; 
+    height: 18vw; 
+    background:#ed008c;}
+
+
+    #shape1{
+        position:fixed;
+        top:42vw;
+        left:5vw;
+        width: 12vw; 
+        height: 12vw; 
+        transform: rotate(-45deg);
+        background:rgb(176,211,49);
+        &:hover{
+            transform: rotate(45deg);
+            @include transition(all, 300ms, ease-in-out, 100ms);
+        }
+        &:hover + #shape2 {
+            transform-origin: left top;
+            transform: rotate(270deg);
+            @include transition(all, 300ms, ease-in-out, 100ms);
+        }
+    }
+
+    #shape2{
+        position:fixed;
+        top:48vw;
+        left:2vw;
+        width: 18vw; 
+        height: 18vw; 
+        background:#ed008c;
+    }
+
+/*middle*/
+
+#shape3{
+    position:fixed;
+    top:3vw;
+    left:45vw;
+    width: 12vw; 
+    height: 12vw; 
+    transform: rotate(-45deg);
+    background:rgb(176,211,49);
+    &:hover{
+        transform: rotate(45deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }
+    &:hover + #shape4 {
+        transform-origin: left top;
+        transform: rotate(270deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    } 
+}
+
+#shape4{
+    position:fixed;
+    top:9vw;
+    left:42vw;
+    width: 18vw; 
+    height: 18vw;
+    background:#ed008c;
+}
+
+#shape5{
+    position:fixed;
+    top:29vw;
+    left:45vw;
+    width: 12vw; 
+    height: 12vw; 
+    transform: rotate(-45deg);
+    background:rgb(176,211,49);
+    &:hover{
+        transform: rotate(45deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }
+    &:hover + #shape6 {
+        transform-origin: left top;
+        transform: rotate(270deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }  
+}
+
+#shape6{
+    position:fixed;
+    top:35vw;
+    left:42vw;
+    width: 18vw; 
+    height: 18vw;
+    background:#ed008c;
+}
+
+#shape7{
+    position:fixed;
+    top:55vw;
+    left:45vw;
+    width: 12vw; 
+    height: 12vw; 
+    transform: rotate(-45deg);
+    background:rgb(176,211,49); 
+    &:hover{
+        transform: rotate(45deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }
+    &:hover + #shape8 {
+        transform-origin: left top;
+        transform: rotate(270deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }
+}
+
+#shape8{
+    position:fixed;
+    top:61vw;
+    left:42vw;
+    width: 18vw; 
+    height: 18vw; 
+    background:#ed008c;
+}
+
+/*right*/
+#shape9{
+    position:fixed;
+    top:15vw;
+    left:85vw;
+    width: 12vw; 
+    height: 12vw;  
+    transform: rotate(-45deg);
+    background:rgb(176,211,49);
+    &:hover{
+        transform: rotate(45deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }
+    &:hover + #shape10 {
+        transform-origin: left top;
+        transform: rotate(270deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    } 
+}
+
+#shape10{
+    position:fixed;
+    top:21vw;
+    left:82vw;
+    width: 18vw; 
+    height: 18vw;
+    background:#ed008c;
+}
+
+
+#shape11{
+    position:fixed;
+    top:42vw;
+    left:85vw;
+    width: 12vw; 
+    height: 12vw; 
+    transform: rotate(-45deg);
+    background:rgb(176,211,49);
+    &:hover{
+        transform: rotate(45deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }
+    &:hover + #shape12 {
+        transform-origin: left top;
+        transform: rotate(270deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }
+}
+
+#shape12{
+    position:fixed;
+    top:48vw;
+    left:82vw;
+    width: 18vw; 
+    height: 18vw; 
+    background:#ed008c;
+}
+
+
+@media all and (max-width:  800px){
+      #shapea{
+    position:fixed;
+    top:120px;
+    left:40px;
+    width: 96px; 
+    height: 96px; 
+    transform: rotate(-45deg);
+    background:rgb(176,211,49);
+    &:hover{
+        transform: rotate(45deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }
+    &:hover + #shape0 {
+        transform-origin: left top;
+        transform: rotate(270deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }
+}
+
+
+#shape0{
+    position:fixed;
+    top:168px;
+    left:16px;
+    width: 144px; 
+    height: 144px; 
+    background:#ed008c;}
+
+
+    #shape1{
+        position:fixed;
+        top:336px;
+        left:40px;
+        width: 96px; 
+        height: 96px; 
+        transform: rotate(-45deg);
+        background:rgb(176,211,49);
+        &:hover{
+            transform: rotate(45deg);
+            @include transition(all, 300ms, ease-in-out, 100ms);
+        }
+        &:hover + #shape2 {
+            transform-origin: left top;
+            transform: rotate(270deg);
+            @include transition(all, 300ms, ease-in-out, 100ms);
+        }
+    }
+
+    #shape2{
+        position:fixed;
+        top:384px;
+        left:16px;
+        width: 144px; 
+        height: 144px; 
+        background:#ed008c;
+    }
+
+/*middle*/
+
+#shape3{
+    position:fixed;
+    top:24px;
+    left:360px;
+    width: 96px; 
+    height: 96px; 
+    transform: rotate(-45deg);
+    background:rgb(176,211,49);
+    &:hover{
+        transform: rotate(45deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }
+    &:hover + #shape4 {
+        transform-origin: left top;
+        transform: rotate(270deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    } 
+}
+
+#shape4{
+    position:fixed;
+    top:72px;
+    left:336px;
+    width: 144px; 
+    height: 144px;
+    background:#ed008c;
+}
+
+#shape5{
+    position:fixed;
+    top:232px;
+    left:360px;
+    width: 96px; 
+    height: 96px; 
+    transform: rotate(-45deg);
+    background:rgb(176,211,49);
+    &:hover{
+        transform: rotate(45deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }
+    &:hover + #shape6 {
+        transform-origin: left top;
+        transform: rotate(270deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }  
+}
+
+#shape6{
+    position:fixed;
+    top:280px;
+    left:336px;
+    width: 144px; 
+    height: 144px;
+    background:#ed008c;
+}
+
+#shape7{
+    position:fixed;
+    top:440px;
+    left:360px;
+    width: 96px; 
+    height: 96px; 
+    transform: rotate(-45deg);
+    background:rgb(176,211,49); 
+    &:hover{
+        transform: rotate(45deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }
+    &:hover + #shape8 {
+        transform-origin: left top;
+        transform: rotate(270deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }
+}
+
+#shape8{
+    position:fixed;
+    top:488px;
+    left:336px;
+    width: 144px; 
+    height: 144px; 
+    background:#ed008c;
+}
+
+/*right*/
+#shape9{
+    position:fixed;
+    top:120px;
+    left:680px;
+    width: 96px; 
+    height: 96px;  
+    transform: rotate(-45deg);
+    background:rgb(176,211,49);
+    &:hover{
+        transform: rotate(45deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }
+    &:hover + #shape10 {
+        transform-origin: left top;
+        transform: rotate(270deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    } 
+}
+
+#shape10{
+    position:fixed;
+    top:168px;
+    left:656px;
+    width: 144px; 
+    height: 144px;
+    background:#ed008c;
+}
+
+
+#shape11{
+    position:fixed;
+    top:336px;
+    left:680px;
+    width: 96px; 
+    height: 96px; 
+    transform: rotate(-45deg);
+    background:rgb(176,211,49);
+    &:hover{
+        transform: rotate(45deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }
+    &:hover + #shape12 {
+        transform-origin: left top;
+        transform: rotate(270deg);
+        @include transition(all, 300ms, ease-in-out, 100ms);
+    }
+}
+
+#shape12{
+    position:fixed;
+    top:384px;
+    left:656px;
+    width: 144px; 
+    height: 144px; 
+    background:#ed008c;
+}
+}
+}

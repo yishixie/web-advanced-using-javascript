@@ -1,0 +1,191 @@
+#cheese-body{
+    margin:0;
+    overflow: hidden;
+
+
+    #fullpage{
+        position:fixed;
+        width:100vw;
+        height: 100vh;
+        background-color:#fdcc36;
+        z-index: -100;
+    }
+
+    @mixin transition($property: all, $duration: 1s,
+     $timing_function: ease-out, $delay: 0s) {
+      -webkit-transition: $property $duration $timing_function $delay;
+      -moz-transition: $property $duration $timing_function $delay;
+      -o-transition: $property $duration $timing_function $delay;
+      transition: $property $duration $timing_function $delay;
+  }
+
+  #cheese-body-shape1{
+    position:fixed;
+    border-radius: 50%;
+    width: 30vw;
+    height: 30vw; 
+    top:5vh;
+    left: 6vw;
+    background-color:#eba11a;
+    z-index: -5;
+    @include transition(all, 1000ms, ease-in-out, 200ms);
+}
+// when hovering on the first circle
+#cheese-body-shape1:hover{
+    width: 17vw;
+    height: 17vw; 
+    top:2vh;
+    left: 5vw;
+    @include transition(all, 800ms, ease-in-out, 200ms);
+}
+#cheese-body-shape1:hover + #cheese-body-shape2{
+    width: 45vw;
+    height: 45vw; 
+    top:50vh;
+    left: 20vw;
+    @include transition(all, 800ms, ease-in-out, 200ms);
+}
+#cheese-body-shape1:hover ~ #cheese-body-shape3{
+    width: 45vw;
+    height: 45vw; 
+    top:50vh;
+    left: 20vw;
+    @include transition(all, 800ms, ease-in-out, 200ms);
+}
+
+
+
+#cheese-body-shape2{
+    position:fixed;
+    border-radius: 50%;
+    width: 18vw;
+    height: 18vw; 
+    top:78vh;
+    left: 40vw;
+    background-color:#eba11a;
+    z-index: -3;
+    @include transition(all, 1000ms, ease-in-out, 200ms);
+}
+//when hovering on the second circle
+#cheese-body-shape2:hover{
+    width: 30vw;
+    height: 30vw; 
+    top:72vh;
+    left: 36vw;
+    @include transition(all, 800ms, ease-in-out, 200ms);
+}    
+#cheese-body-shape2:hover + #cheese-body-shape3{
+    width: 58vw;
+    height: 58vw; 
+    top:20vh;
+    left: 73vw;
+    @include transition(all, 800ms, ease-in-out, 200ms);
+}  
+
+
+
+#cheese-body-shape3{
+    position:fixed;
+    border-radius: 50%;
+    width: 43vw;
+    height: 43vw; 
+    top:45vh;
+    left: 80vw;
+    background-color:#eba11a;
+    z-index: -1;
+    @include transition(all, 1000ms, ease-in-out, 200ms);
+}   
+
+//when hovering on the third circle
+#cheese-body-shape3:hover{
+    width: 65vw;
+    height: 65vw; 
+    top:10vh;
+    left: 60vw;
+    @include transition(all, 800ms, ease-in-out, 200ms);
+}  
+
+
+@media all and (max-width:  800px){
+    #cheese-body-shape1{
+        position:fixed;
+        border-radius: 50%;
+        width: 240px;
+        height: 240px; 
+        top:5vh;
+        left: 48px;
+        background-color:#eba11a;
+        z-index: -5;
+        @include transition(all, 1000ms, ease-in-out, 200ms);
+    }
+
+
+    #cheese-body-shape1:hover{
+    width: 136px;
+    height: 135px; 
+    top:2vh;
+    left: 40px;
+    @include transition(all, 800ms, ease-in-out, 200ms);
+}
+#cheese-body-shape1:hover + #cheese-body-shape2{
+    width: 360px;
+    height: 360px; 
+    top:50vh;
+    left: 160px;
+    @include transition(all, 800ms, ease-in-out, 200ms);
+}
+#cheese-body-shape1:hover ~ #cheese-body-shape3{
+    width: 360px;
+    height: 360px; 
+    top:50vh;
+    left: 160px;
+    @include transition(all, 800ms, ease-in-out, 200ms);
+}
+
+
+    #cheese-body-shape2{
+        position:fixed;
+        border-radius: 50%;
+        width: 144px;
+        height: 144px; 
+        top:78vh;
+        left: 320px;
+        background-color:#eba11a;
+        z-index: -3;
+        @include transition(all, 1000ms, ease-in-out, 200ms);
+    }
+    #cheese-body-shape2:hover{
+        width: 240px;
+        height: 240px; 
+        top:72vh;
+        left: 288px;
+        @include transition(all, 800ms, ease-in-out, 200ms);
+    }     
+#cheese-body-shape2:hover + #cheese-body-shape3{
+    width: 464px;
+    height: 464px; 
+    top:20vh;
+    left: 584px;
+    @include transition(all, 800ms, ease-in-out, 200ms);
+}
+
+    #cheese-body-shape3{
+        position:fixed;
+        border-radius: 50%;
+        width: 344px;
+        height: 344px; 
+        top:45vh;
+        left: 640px;
+        background-color:#eba11a;
+        z-index: -3;
+        @include transition(all, 1000ms, ease-in-out, 200ms);
+    }
+    #cheese-body-shape3:hover{
+        width: 304px;
+        height: 304px; 
+        top:50vh;
+        left: 616px;
+        @include transition(all, 800ms, ease-in-out, 200ms);
+    }     
+}
+}
